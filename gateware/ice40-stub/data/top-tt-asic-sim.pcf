@@ -1,0 +1,24 @@
+#
+# Pinmap for the TT ASIC SIMULATOR version 0.0
+#
+
+
+# Clock
+set_io -nowarn clk_in 20  # IOB_25B_G3
+
+
+# SPI
+set_io -nowarn spi_mosi 14
+set_io -nowarn spi_miso 17
+set_io -nowarn spi_clk  15
+set_io -nowarn spi_cs_n 16
+
+# USB
+set_io -nowarn usb_dp 21 # IOB_23B
+set_io -nowarn usb_dn 13 # IOB_24A
+set_io -nowarn usb_pu 12 # IOB_22A 
+
+
+# Button
+set_io -nowarn -pullup yes btn 9 # IOB_16A / boot button
+

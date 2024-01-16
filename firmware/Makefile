@@ -5,7 +5,7 @@ OBJCOPY = $(CROSS)objcopy
 ICEPROG = iceprog
 DFU_UTIL = dfu-util
 
-GITVER = $(shell git describe)
+GITVER = $(shell git describe --always)
 TARGET_BASE=no2bootloader-$(BOARD)
 TARGET=$(TARGET_BASE)-$(GITVER)
 

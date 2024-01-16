@@ -72,6 +72,17 @@
 	// @tnt xmas-snoopy led controller
 	`define USE_HF_OSC
 	`define MISC_SEL 2'b10
+
+`elsif BOARD_TT_ASIC_SIM
+	`define HAS_USB
+	// TT ASIC simulator
+	// 20M input, 48M output
+	`define PLL_CORE
+	`define PLL_CUSTOM
+	`define PLL_DIVR 4'b0001
+	`define PLL_DIVF 7'b1001100
+	`define PLL_DIVQ 3'b100
+	`define PLL_FILTER_RANGE 3'b001
 `endif
 
 
