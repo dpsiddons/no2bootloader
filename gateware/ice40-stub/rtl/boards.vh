@@ -183,6 +183,18 @@
 		2'b00, 8'h28,	/* SR1 value */ \
 		2'b11, 8'h03	/* SR2 value */ \
 	}
+
+`elsif BOARD_ANYTHING_PMOD
+	`define HAS_USB
+	`define HAS_RGB
+	`define RGB_MAP 12'h021		// 41=Red, 40=Blue, 39=Green
+	`define FLASH_LOCKNOT { \
+		2'b01, 8'h50,   /* WRITE_ENABLE_VOLTATILE */ \
+		2'b00, 8'h01,	/* WRITE_SR */ \
+		2'b00, 8'h28,	/* SR1 value */ \
+		2'b11, 8'h03	/* SR2 value */ \
+	}
+	
 `endif
 
 // Defaults

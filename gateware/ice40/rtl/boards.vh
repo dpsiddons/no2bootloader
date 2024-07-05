@@ -90,6 +90,19 @@
 	`define HAS_RGB
 	`define USE_HF_OSC
 	
+	
+`elsif BOARD_ANYTHING_PMOD
+	`define HAS_USB
+	`define HAS_RGB
+	`define RGB_MAP 12'h021		// 41=Red, 40=Blue, 39=Green
+	// TT ASIC simulator
+	// 24M input, 48M output, from icepll -i 24 -o 48
+	`define PLL_CORE
+	`define PLL_CUSTOM
+	`define PLL_DIVR 4'b0000
+	`define PLL_DIVF 7'b0011111
+	`define PLL_DIVQ 3'b100
+	`define PLL_FILTER_RANGE 3'b010
 `endif
 
 

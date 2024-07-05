@@ -1,0 +1,67 @@
+#
+# Pinmap for the Anything PMOD
+#
+
+
+# Clock
+set_io -nowarn clk_in 20  # IOB_25B_G3
+
+
+# SPI
+set_io -nowarn spi_mosi 14
+set_io -nowarn spi_miso 17
+set_io -nowarn spi_clk  15
+set_io -nowarn spi_cs_n 16
+
+# USB
+set_io -nowarn usb_dp 19 # IOB_29B
+set_io -nowarn usb_dn 18 # IOB_31B
+set_io -nowarn usb_pu 21 # IOB_23B 
+
+
+# Button
+set_io -nowarn btn 25 # IOT_36B / boot button
+
+
+# Leds
+set_io -nowarn rgb[0] 39
+set_io -nowarn rgb[1] 40
+set_io -nowarn rgb[2] 41
+
+
+set_io -nowarn pmod1_1  26
+set_io -nowarn pmod1_2  28
+set_io -nowarn pmod1_3  32
+set_io -nowarn pmod1_4  37 # G1
+set_io -nowarn pmod1_5  23
+set_io -nowarn pmod1_6  27
+set_io -nowarn pmod1_7  31
+set_io -nowarn pmod1_8  34
+
+
+set_io -nowarn pmod2_1  46
+set_io -nowarn pmod2_2  48
+set_io -nowarn pmod2_3  3
+set_io -nowarn pmod2_4  44 # G6
+set_io -nowarn pmod2_5  45
+set_io -nowarn pmod2_6  47
+set_io -nowarn pmod2_7  2
+set_io -nowarn pmod2_8  4
+
+set_io -nowarn pmodh_1  11
+set_io -nowarn pmodh_2  9
+set_io -nowarn pmodh_3  42
+set_io -nowarn pmodh_4  36
+set_io -nowarn pmodh_5  10
+set_io -nowarn pmodh_6  43
+set_io -nowarn pmodh_7  38
+set_io -nowarn pmodh_8  35 # G0
+
+set_io -nowarn usrswitch_1  13
+set_io -nowarn usrswitch_2  12
+set_io -nowarn usrio    6
+
+
+
+
+
