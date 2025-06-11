@@ -83,6 +83,15 @@
 	`define PLL_DIVF 7'b1001100
 	`define PLL_DIVQ 3'b100
 	`define PLL_FILTER_RANGE 3'b001
+
+`elsif BOARD_TinyFPGA-BX
+        `define HAS_USB
+        `define PLL_CORE
+        `define PLL_CUSTOM
+        `define PLL_DIVR 4'b0000
+        `define PLL_DIVF 7'b0101111
+        `define PLL_DIVQ 3'b100
+        `define PLL_FILTER_RANGE 3'b001
 	
 	
 `elsif BOARD_TT04_ASIC_SIM
