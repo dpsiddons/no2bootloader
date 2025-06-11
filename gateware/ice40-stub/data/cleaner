@@ -1,0 +1,2 @@
+make PRE_CLEAN=1 BOARD=TinyFPGA-BX CROSS=riscv-none-elf- bootloader-clean
+
