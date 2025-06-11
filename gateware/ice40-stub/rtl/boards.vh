@@ -171,6 +171,17 @@
 		2'b00, 8'h28,	/* SR1 value */ \
 		2'b11, 8'h03	/* SR2 value */ \
 	}
+
+`elsif BOARD_TinyFPGA-BX
+	`define HAS_USB
+		// Assumes AT25SF161
+	`define FLASH_LOCK { \
+		2'b01, 8'h50,   /* WRITE_ENABLE_VOLTATILE */ \
+		2'b00, 8'h01,	/* WRITE_SR */ \
+		2'b00, 8'h30,	/* SR1 value */ \
+		2'b11, 8'h01	/* SR2 value */ \
+	}
+
 	
 `elsif BOARD_TT04_ASIC_SIM
 
