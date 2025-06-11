@@ -1,0 +1,19 @@
+# SPI
+set_io -nowarn             spi_mosi G6
+set_io -nowarn -pullup yes spi_miso H7
+set_io -nowarn             spi_clk  G7
+set_io -nowarn -pullup yes spi_cs_n F7
+
+# USB
+set_io -nowarn usb_dp B4 
+set_io -nowarn usb_dn A4
+set_io -nowarn usb_pu A3
+
+# Button
+set_io -nowarn btn B1
+
+# Clock
+set_io -nowarn clk_in B2
+
+# Leds
+set_io -nowarn led B3
